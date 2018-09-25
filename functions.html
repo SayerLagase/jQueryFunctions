@@ -1,0 +1,114 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jquery functions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="functions.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        
+        $("#hide").click(function(){
+            $("p").hide();
+        })
+        $("#show").click(function(){
+            $("p").show();
+        })
+        $("#toggle").click(function(){
+            $('p').toggle();
+        })
+        $("#fadeOut").click(function(){
+            $("p").fadeOut("slow");
+        });
+        $("#fadeIn").click(function(){
+            $("p").fadeIn("slow");
+        });
+
+        $("#slideDown").click(function(){
+             $(".cat").slideDown();
+        });
+        $("#slideUp").click(function(){
+             $(".cat").slideUp();
+        });
+        $("#slideToggle").click(function(){
+             $(".cat").slideToggle();
+        });
+        $("#changeColor").click(function(){
+            $("#blank").addClass("red");
+        });
+        $("#before").click(function(){
+            $("#third").before("<p>blah blah blah</p>");
+        });
+        $("#after").click(function(){
+            $("#third").after("<p>blah blah blah</p>");
+        });
+        $("#append").click(function(){
+            $("#third").append("<p>bloo bloo bloo</p>");
+        });
+        $("#html").click(function(){
+            $("#paragraph").html("hello world!!");
+        });
+        $("#attr-width").click(function(){
+            $("#img").attr("width", "500");
+        });
+        $("#textbox1").click(function(){
+            $("input:text").val("Name Goes Here");
+        });
+        $("#changeTxt").click(function(){
+            $("h4").html("hello world!!");
+        });
+
+        })
+
+    </script>
+</head>
+
+
+<body>
+<div id="container">
+
+    <div class="hide-show">
+        <button id=hide>Click here to Hide!!</button>
+        <button id=show>Click here to Show !!</button>
+        <button id=toggle>click here to toggle</button>
+        <button id=fadeOut>click here to fade text in!</button>
+        <button id=fadeIn>click here to fade text back!</button>
+        
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad amet officia nostrum exercitationem dolorem, quisquam quidem magnam reiciendis dolor, repudiandae facilis a provident praesentium officiis! Est in deserunt autem!</p>
+    </div>
+    <div class="slide">
+        <button id="slideToggle">Click here to slide!</button>
+        <button id=slideDown>click here to slide cat down!</button>
+        <button id=slideUp>click here to slide cat up!</button>
+        <img class="cat" src="cat.png">
+</div>
+    <div class="colorChange">
+       
+        <p id="blank"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad amet officia nostrum exercitationem dolorem, quisquam quidem magnam reiciendis dolor, repudiandae facilis a provident praesentium officiis! Est in deserunt autem!</p>
+
+        <button id="changeColor">Click here to change the text color!</button>
+
+    </div>
+ <div class="before_text">
+     <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi iste a nesciunt enim doloremque est veritatis. Ut, eveniet omnis accusamus incidunt dolore nostrum, cum magnam, quaerat mollitia praesentium numquam non.</p>
+    <button id="before">Add before! </button>
+    <button id="after">Add after! </button>
+     <button id="append">Add append! </button>
+</div>
+<div class="content">
+    <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dolore mollitia! Unde dicta odio deleniti eum molestias magni iure, aperiam exercitationem voluptas laborum porro fuga facere! Cupiditate ex eius ratione?</p>
+    <button id="html">Change content! </button>
+</div>
+<div class="fish">
+    <img  id="img" src="fish.png">
+    <button id="attr-width">Change fish size! </button>
+</div>
+<div class="text">
+    <p >Name: <input type="text"  name="textbox1"></p>
+    <button id="textbox1">Change input value here</button>
+    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ipsam molestiae, aut inventore, voluptatum vel itaque quod voluptas eos tempora hic omnis dolore eum suscipit odit laudantium, vero adipisci et?</h4>
+    <button id="changeTxt">Change text here</button>
+
+</div>

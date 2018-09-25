@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    width:900px;
+    height: 8000px;
+    background-color: blue;
+    margin: 0px auto;
+}
+.hide-show{
+    width: 900px;
+    height: 100px;
+    background-color: blueviolet;
+}
+.slide{
+    width: 900;
+    height: 100px;
+    background-color: darkgoldenrod;
+}
+.cat{
+    height:90px;
+    width: 90px;
+}
+.colorChange{
+    height: 100px;
+    width: 900px;
+    background-color: dimgray;
+}
+.dog{
+    width: 120px;
+    height: auto;
+    display: inline-block;
+}
+.red{
+    color: red;
+}
+.content{
+    height:100px;
+    background-color: darkcyan;
+}
